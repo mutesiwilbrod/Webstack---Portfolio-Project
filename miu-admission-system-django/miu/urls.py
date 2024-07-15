@@ -4,7 +4,7 @@ from .views import UpdatePostView
 
 
 urlpatterns = [
-    path("", views.college, name="college"),
+    path("", views.miu, name="miu"),
     path("notice/<int:myid>/", views.notice, name="notice"),
     path("application_form/", views.application_form, name="application_form"),
     path("edit_application/", views.edit_application, name="edit_application"),

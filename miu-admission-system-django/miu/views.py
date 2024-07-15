@@ -7,9 +7,9 @@ from .forms import ApplicationForm
 from .models import Application, Notice, Detail
 from django.views.generic import UpdateView
 
-def college(request):
+def miu(request):
     notice = Notice.objects.all()
-    return render(request, "college.html", {'notice':notice})
+    return render(request, "miu.html", {'notice':notice})
 
 def notice(request, myid):
     notices = Notice.objects.filter(id=myid).first()
@@ -93,7 +93,7 @@ def loggedin(request):
                 return redirect("/")
             else:
                 messages.error(request, "Invalid Credentials")
-            return render(request, 'college.html')   
+            return render(request, 'miu.html')   
     return render(request, "login.html")
 
 def loggedout(request):
