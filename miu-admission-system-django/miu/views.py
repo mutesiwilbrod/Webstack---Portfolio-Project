@@ -9,7 +9,7 @@ from django.views.generic import UpdateView
 
 def miu(request):
     notice = Notice.objects.all()
-    return render(request, "miu.html", {'notice':notice})
+    return render(request, "login.html", {'notice':notice})
 
 def notice(request, myid):
     notices = Notice.objects.filter(id=myid).first()
