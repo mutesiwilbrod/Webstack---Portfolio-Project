@@ -75,7 +75,7 @@
             <hr>
         <div class="col-md-4">
             <div class="profile-img">
-                <h3>10th Std Details</h3>
+                <h3>UCE Details</h3>
             </div>
         </div>
         <div class="col-md-8">
@@ -84,138 +84,35 @@
                     <br><br>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>SSC Percentage :</label>
+                            <label>UCE Aggregates:</label>
                         </div>
                         <div class="col-md-6">
-                            <p>{{user.application.ssc_percentage}}%</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>SSC Marksheet :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="{{user.application.ssc_marksheet.url}}">View SSC Marksheet</a></p>
+                            <p>{{application.uce_aggregates}}%</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>SSC Passing Certificate :</label>
+                            <label>UCE Certificate:</label>
                         </div>
                         <div class="col-md-6">
-                            <p><a href="{{user.application.ssc_passing_certificate.url}}"> View SSC Passing Certificate</a></p>
-                        </div>
-                    </div>
-                    {% if user.application.phone_no %}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>SSC Leaving Certificate :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="{{user.application.ssc_leaving_certificate.url}}">View SSC Leaving Certificate</a></p>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-</div>
-<hr>
-
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="profile-img">
-                <h3>12th Std Details</h3>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="profile-tab">
-                <div class="tab-pane">
-                    <br><br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>HSC Percentage :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p>{{user.application.hsc_percentage}}%</p>
+                            <p><a href="{{application.uce_certificate.url}}">View UCE Certificate</a></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>HSC Marksheet :</label>
+                            <label>UACE points:</label>
                         </div>
                         <div class="col-md-6">
-                            <p><a href="{{user.application.hsc_marksheet.url}}">View HSC Marksheet</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>HSC Passing Certificate :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="{{user.application.hsc_passing_certificate.url}}">View HSC Marksheet</a></p>
+                            <p>{{application.uace_points}}</p>
                         </div>
                     </div>
                     {% if user.application.phone_no %}
                     <div class="row">
                         <div class="col-md-6">
-                            <label>HSC Leaving Certificate :</label>
+                            <label>UACE Leaving Certificate:</label>
                         </div>
                         <div class="col-md-6">
-                            <p><a href="{{user.application.hsc_leaving_certificate.url}}">View HSC Leaving Certificate</a></p>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-</div>
-<hr>
-
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="profile-img">
-                <h3>CET and JEE Scorecard</h3>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="profile-tab">
-                <div class="tab-pane">
-                    <br><br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>CET Percentile :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p>{{user.application.cet_percentile}}</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>CET Scorecard :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="{{user.application.cet_scorecard.url}}">View CET Scorecard</a></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>JEE Percentile :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p>{{user.application.jee_percentile}}</p>
-                        </div>
-                    </div>
-                    {% if user.application.phone_no %}
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label>JEE Scorecard :</label>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="{{user.application.jee_scorecard.url}}">View JEE Scorecard</a></p>
-                        </div>
+                            <p><a href="{{application.uace_leaving_certificate.url}}">View UACE Leaving Certificate</a></p>                        </div>
                     </div>
                     {% endif %}
                 </div>
